@@ -5,6 +5,7 @@ filetype plugin indent on
 
 " airline configuration
 set laststatus=2
+let g:airline_powerline_fonts=1
 
 " base16 colorschme configuration
 set background=dark

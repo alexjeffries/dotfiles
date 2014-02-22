@@ -1,3 +1,6 @@
+" use improved vi
+set nocompatible
+
 " base settings for pathogen
 execute pathogen#infect()
 syntax on

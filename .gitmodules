@@ -16,3 +16,6 @@
 [submodule "home/.vim/bundle/syntastic"]
 	path = home/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "home/.vim/bundle/tmuxline.vim"]
+	path = home/.vim/bundle/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim

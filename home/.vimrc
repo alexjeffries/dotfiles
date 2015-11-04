@@ -10,9 +10,8 @@ filetype plugin indent on
 set laststatus=2
 let g:airline_powerline_fonts=1
 
-" base16 colorschme configuration
 set background=dark
-colorscheme base16-chalk
+colorscheme solarized
 
 " extra personal preferences
 set number

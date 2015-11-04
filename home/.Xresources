@@ -2,7 +2,8 @@
 ! Scheme: Chris Kempson (http://chriskempson.com)
 
 #define base00 #151515
-#define base01 #202020
+!#define base01 #202020
+#define base01 #ffffff
 #define base02 #303030
 #define base03 #505050
 #define base04 #b0b0b0
@@ -108,9 +109,11 @@ URxvt.scrollBar: false
 ! URxvt*backgroundPixmap:   file[;geom]
 ! URxvt*iconFile:           file
 ! URxvt*font:               fontname
-URxvt.font: xft:Liberation Mono for Powerline:size=6
+URxvt*font: xft:Liberation Mono for Powerline:size=10
+!URxvt.font: 9x15
+!URxvt*font: xft:Inconsolata:size=8
 ! URxvt*boldFont:           fontname
-URxvt.boldFont: xft:Liberation Mono for Powerline:size=6:style=Bold
+!URxvt.boldFont: xft:Liberation Mono for Powerline:size=6:style=Bold
 ! URxvt*italicFont:         fontname
 ! URxvt*boldItalicFont:     fontname
 ! URxvt*intensityStyles:    boolean

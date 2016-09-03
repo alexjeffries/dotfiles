@@ -54,3 +54,11 @@
 	path = home/.vim/bundle/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv.git
 	branch = master
+[submodule "home/.vim/bundle/delimitMate"]
+	path = home/.vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+	branch = master
+[submodule "home/.vim/bundle/YouCompleteMe"]
+	path = home/.vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+	branch = master

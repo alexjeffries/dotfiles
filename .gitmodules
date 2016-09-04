@@ -66,3 +66,15 @@
 	path = home/.misc_plugins/antigen
 	url = https://github.com/zsh-users/antigen
 	branch = master
+[submodule "home/.vim/bundle/neco-ghc"]
+	path = home/.vim/bundle/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc
+	branch = master
+[submodule "home/.vim/bundle/ghcmod-vim"]
+	path = home/.vim/bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim
+	branch = master
+[submodule "home/.vim/bundle/vimproc.vim"]
+	path = home/.vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim
+	branch = master

@@ -82,3 +82,7 @@
 	path = home/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 	branch = master
+[submodule "home/.vim/bundle/haskell-vim"]
+	path = home/.vim/bundle/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim
+	branch = master

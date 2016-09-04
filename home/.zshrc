@@ -42,3 +42,5 @@ antigen bundle pip
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme candy
 antigen apply
+
+source ~/.homesick/repos/homeshick/homeshick.sh

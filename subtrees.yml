@@ -79,3 +79,7 @@
 - prefix: vim/.vim/bundle/vim-virtualenv
   url: https://github.com/jmcantrell/vim-virtualenv.git
   commit-ish: master
+
+- prefix: zsh/.zsh_plugs/antigen
+  url: https://github.com/zsh-users/antigen
+  commit-ish: master

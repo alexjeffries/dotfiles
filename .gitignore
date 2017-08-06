@@ -1,0 +1,5 @@
+/init.vim
+/doc/tags
+.*
+*.obj
+tags

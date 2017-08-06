@@ -1,11 +1,11 @@
 ---
 
-- prefix: vim/.vim/bundle/ale
-  url: https://github.com/w0rp/ale
-  commit-ish: master
-
 - prefix: fonts/.fonts/powerline-fonts
   url: https://github.com/Lokaltog/powerline-fonts.git
+  commit-ish: master
+
+- prefix: vim/.vim/bundle/ale
+  url: https://github.com/w0rp/ale
   commit-ish: master
 
 - prefix: vim/.vim/bundle/delimitMate

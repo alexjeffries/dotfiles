@@ -16,9 +16,3 @@ fi
 
 
 # Put your fun stuff here.
-
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-
-GIT_PROMPT_ONLY_IN_REPO=1
-GIT_PROMPT_THEME=Solarized
-source ~/.bash-git-prompt/gitprompt.sh

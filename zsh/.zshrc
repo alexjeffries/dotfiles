@@ -3,11 +3,9 @@
 autoload -Uz promptinit
 promptinit
 prompt gentoo
-#prompt adam1
 
 setopt histignorealldups sharehistory
 
-# Use emacs keybindings even if our EDITOR is set to vi
 bindkey -v
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
@@ -37,20 +35,12 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-source ~/inst/antigen/antigen.zsh
+source ~/.zsh_plugs/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle zsh-users/zsh-syntax-highlighting
-# antigen theme blinks
-# antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 antigen theme candy
-BULLETTRAIN_STATUS_EXIT_SHOW=true
-BULLETTRAIN_DIR_CONTEXT_SHOW=true
-BULLETTRAIN_EXEC_TIME_SHOW=true
-
 antigen apply
-#source tmuxp.zsh
 
-source ~/.homesick/repos/homeshick/homeshick.sh
 export PATH="${HOME}/.local/bin:${PATH}"

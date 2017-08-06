@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#
+# Using a config file, add or update subtrees.
+#
+# Requires: yq, jq
+# License: MIT
+
+CONFIG_FILE="./subtrees.yml"
+
+main() {
+  local config_json
+  config_json=$(yq . "${CONFIG_FILE}")
+
+  set -o pipefail
+  jq -r '.[].prefix' <<< "${config_json}" | while IFS= read -r prefix; do
+    url=$(jq -r --arg prefix "$prefix" '.[] | select(.prefix == $prefix) | .url' <<< "${config_json}")
+    com=$(jq -r --arg prefix "$prefix" '.[] | select(.prefix == $prefix) | .["commit-ish"]' <<< "${config_json}")
+
+    if [[ ! -e "${prefix}" ]]; then
+      git subtree add --prefix "${prefix}" "${url}" "${com}" --squash
+    else
+      git subtree pull --prefix "${prefix}" "${url}" "${com}" --squash
+    fi
+  done
+}
+
+main "$@"

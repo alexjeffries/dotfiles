@@ -24,3 +24,9 @@ autocmd VimEnter * call StartUp()
 
 " extra personal preferences
 set number
+set sw=2
+set ts=2
+set et
+set cc=80
+set incsearch
+set hlsearch
